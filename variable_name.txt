@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('variable_name'){
             steps{
-                echo 'this is "${STGCMP}"'
+                echo "this is ${STGCMP}"
             }
         }
     }
