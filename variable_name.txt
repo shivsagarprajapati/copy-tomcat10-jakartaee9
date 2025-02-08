@@ -1,0 +1,13 @@
+pipeline{
+    agnet any
+    environment{
+        STGCMP="This is new"
+    stages{
+        stage('variable_name'){
+            steps{
+                echo 'this is ${STGCMP}'
+            }
+        }
+    }
+    }
+}
